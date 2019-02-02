@@ -46,6 +46,9 @@ public class LoginTests {
         loginTest1();
 
         driver.findElement(By.id("ctl00_logout")).click();
+        
+        String title = driver.getTitle();
+        
 
     }
 
