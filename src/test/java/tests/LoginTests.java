@@ -40,6 +40,15 @@ public class LoginTests {
 
     }
 
+    @Test
+    public void logOutTest() {
+
+        loginTest1();
+
+        driver.findElement(By.id("ctl00_logout")).click();
+
+    }
+
    @AfterMethod
     public void cleanUp() {
 
